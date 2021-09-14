@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+/* Font family Roboto */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Css Variables of differents colors */
+:root {
+  --bg-color: #fff;
+  --custom-blue: #056ebb;
+  --custom-red: #e82849;
+  --custom-gray: #b4b4b6;
+  --custom-black: #24222e;
+}
+/* General styles */
+html,
+body {
+  height: 100vh;
+  font-size: 10px;
+  background-color: var(--bg-color, white);
+  font-family: "Roboto", sans-serif;
+}
+
+div.page1 {
+  width: 90vw;
+  margin: 1rem auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+
+a {
+  text-decoration: none;
+  color: var(--custom-blue);
+}
+
+div.logo > img {
+  width: 200px;
+  height: 100%;
+}
+
+p {
+  font-size: 2rem;
+}
+header {
+  display: flex;
+  height: 80vh;
+  margin-top: 3rem;
+}
+/* Navigation styles */
+nav p a {
+  color: var(--custom-gray);
+}
+nav a:hover {
+  color: var(--custom-blue);
+}
+
+.button1 {
+  padding: 0.8em 2em;
+  text-align: center;
+  font-size: 1.8em;
+  cursor: pointer;
+  border-radius: 12px;
+  border: none;
+  background-color: var(--custom-red);
+  color: #fff;
+  transition-duration: 0.4s;
+}
+
+.button1:hover {
+  color: var(--custom-red);
+  background-color: var(--bg-color);
+  border: 2px solid var(--custom-red);
+}
+/* Header styles */
+section.gauche {
+  flex: 1;
+  height: 60vh;
+  align-self: center;
+}
+section.gauche h1 {
+  font-size: 6em;
+  margin-bottom: 3rem;
+}
+span.location {
+  font-size: 2em;
+  color: var(--custom-blue);
+}
+span.location i {
+  padding-right: 0.4em;
+  margin-bottom: 3rem;
+}
+span.title {
+  color: var(--custom-blue);
+}
+section.gauche p {
+  font-size: 2.2em;
+  color: var(--custom-gray);
+  margin-bottom: 3rem;
+}
+
+.button2 {
+  font-size: 1.8em;
+  padding: 0.8em 2em;
+  border: none;
+  border-radius: 12px;
+  background-color: var(--custom-red);
+  color: var(--bg-color);
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+.button2:hover {
+  color: var(--custom-red);
+  background-color: var(--bg-color);
+  border: 2px solid var(--custom-red);
+}
+section.droite {
+  width: 500px;
+  height: 80vh;
+  background: url("Images/fufji_mountain\ 1.svg") no-repeat;
+  background-size: cover;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}

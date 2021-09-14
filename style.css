@@ -43,9 +43,7 @@ div.logo > img {
   width: 200px;
   height: 100%;
 }
-div.visit-img {
-  width: 200px;
-}
+
 div.visit-img > img {
   width: 30px;
   margin-right: 1rem;

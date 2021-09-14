@@ -43,6 +43,18 @@ div.logo > img {
   width: 200px;
   height: 100%;
 }
+div.visit-img {
+  width: 200px;
+}
+div.visit-img > img {
+  width: 30px;
+  margin-right: 1rem;
+  height: auto;
+  border-radius: 50%;
+}
+.img-bd-circle {
+  border: 4px solid var(--custom-red);
+}
 
 p {
   font-size: 2rem;
@@ -105,6 +117,7 @@ section.gauche p {
 }
 
 .button2 {
+  margin-top: 2.5rem;
   font-size: 1.8em;
   padding: 0.8em 2em;
   border: none;

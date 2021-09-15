@@ -143,20 +143,23 @@ div.visit-card {
   background-color: var(--bg-color);
   border-radius: 12px;
   width: 190px;
-  height: 60px;
+  height: 75px;
+  padding-top: 0.3em;
+  margin-top: 0.5em;
 }
 span.number {
   color: var(--custom-blue);
   font-weight: 500;
 }
 div.visit-card p {
-  line-height: 1.3em;
-  padding: 0.2em;
+  line-height: 1.4em;
+  padding: 0.3em;
 }
 
 .img-card {
   background-color: #f7f7f7;
   width: 60px;
+  height: 60px;
   padding: 0.5rem;
   margin: 0.3rem;
   border-radius: 12px;
@@ -167,4 +170,14 @@ div.visit-card p {
 .img-card > img {
   width: 80%;
   height: auto;
+}
+section.head-footer {
+  margin: 5rem auto;
+}
+img.partners {
+  width: 300px;
+  height: auto;
+  vertical-align: baseline;
+  text-align: centers;
+  padding-left: 8rem;
 }

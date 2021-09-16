@@ -24,13 +24,13 @@ body {
 
 div.page1 {
   width: 90vw;
-  margin: 1rem auto;
+  margin: 0 auto;
 }
 div.page2 {
   gap: 20px;
   width: 90vw;
   height: 80vh;
-  margin: 8rem auto;
+  margin: 15rem auto 8rem auto;
   display: grid;
   grid-template-columns: 40vw 25vw 25vw;
   grid-template-rows: 0.5fr 0.5fr;
@@ -43,6 +43,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 20vh;
+  margin-bottom: 8rem;
 }
 
 a {
@@ -103,9 +104,11 @@ section.gauche {
   height: 60vh;
   align-self: center;
 }
-section.gauche h1 {
+section.gauche h1,
+div.pg2-gauche h1 {
   font-size: 6em;
   margin-bottom: 3rem;
+  line-height: 1.5em;
 }
 span.location {
   font-size: 2em;
@@ -113,15 +116,18 @@ span.location {
 }
 span.location i {
   padding-right: 0.4em;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 span.title {
   color: var(--custom-blue);
 }
-section.gauche p {
+section.gauche p,
+div.pg2-gauche p {
   font-size: 2.2em;
   color: var(--custom-gray);
   margin-bottom: 3rem;
+  margin-top: 3rem;
+  line-height: 2em;
 }
 
 .button2 {
@@ -142,7 +148,7 @@ section.gauche p {
 }
 section.droite {
   width: 500px;
-  height: 80vh;
+  height: 90vh;
   background: url("Images/fufji_mountain\ 1.svg") no-repeat;
   background-size: cover;
   border-top-left-radius: 50%;
@@ -164,6 +170,7 @@ span.number {
 div.visit-card p {
   line-height: 1.4em;
   padding: 0.3em;
+  font-weight: 400;
 }
 
 .img-card {
@@ -181,10 +188,27 @@ div.visit-card p {
   width: 80%;
   height: auto;
 }
+.user {
+  position: absolute;
+  right: 18rem;
+  top: 18rem;
+}
+.tower {
+  position: absolute;
+  top: 25rem;
+  right: 45rem;
+}
+.fudji {
+  position: absolute;
+  right: 25rem;
+  bottom: 3rem;
+}
 /* Section partners */
 section.partners {
-  margin: 8rem auto;
-  height: 20vh;
+  margin: 6rem auto;
+  padding: 6rem;
+  height: 30vh;
+  background-color: #fdfdfd;
 }
 
 section.partners > img {
@@ -192,24 +216,42 @@ section.partners > img {
   height: auto;
 }
 /* Page 2 */
+/* Partie gauche */
 div.pg2-gauche {
   grid-area: pg2-gauche;
-  background-color: #c4c4c4;
+  margin-top: 2.5rem;
+}
+
+/* Boxs droit */
+img.dest-img {
+  width: 80px;
+  height: auto;
 }
 
 div.destination {
   grid-area: destination;
-  background-color: #c4c4c4;
 }
+
 div.preparation {
   grid-area: preparation;
-  background-color: #c4c4c4;
 }
 div.position {
   grid-area: position;
-  background-color: #c4c4c4;
 }
 div.bookmark {
   grid-area: bookmark;
-  background-color: #c4c4c4;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-top: 2rem;
+}
+
+div.destination p,
+div.preparation p,
+div.position p,
+div.bookmark p {
+  color: var(--custom-gray);
+  margin-top: 2rem;
+  line-height: 1.8em;
 }
